@@ -1,0 +1,37 @@
+.content{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.content__form{
+    display: grid;
+}   
+
+.content__button{
+    height: 2.5rem;
+    border: 0;
+    margin-left: auto;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.content__add-comment{
+    border-right: solid 0.1rem;
+    padding-right: 7rem;
+
+}
+
+.content__show-comment{
+    padding-left: 7rem;
+}
+
+.content__list{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.content__list-item{
+    color: #B4AFAF;
+    margin-top: 1rem;
+
+}

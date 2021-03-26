@@ -1,0 +1,29 @@
+<%- include('partials/header.ejs') %>
+<body>
+  <div class="content">
+      <div class="content__add-comment">
+        <p name="description" class="content__block-input-title">Comentário</p>
+        <form class="content__form" action="/registerComment" method="post">
+          <textarea id="description" name="description" rows="5" cols="33" >
+
+          </textarea>
+          <button type="submit" class="content__button">Cadastrar</button>
+  
+        </form>
+        
+      </div>
+      <div class="content__show-comment">
+        <p>Comentário</p>
+        <ul class="content__list">
+          
+          <% comments.forEach(comment=>{%>
+            <li class='content__list-item'><%=comment.description %></li>
+          <% }); %> 
+        </ul>
+      </div>
+  </div>
+</body>
+
+
+
+</html>
